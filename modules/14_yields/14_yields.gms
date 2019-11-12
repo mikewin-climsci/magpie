@@ -26,8 +26,8 @@
 
 
 *###################### R SECTION START (MODULETYPES) ##########################
-$Ifi "%yields%" == "biocorrect" $include "./modules/14_yields/biocorrect/realization.gms"
-$Ifi "%yields%" == "dynamic_aug18" $include "./modules/14_yields/dynamic_aug18/realization.gms"
-$Ifi "%yields%" == "dynamic_aug18_yld_dcrs" $include "./modules/14_yields/dynamic_aug18_yld_dcrs/realization.gms"
-$Ifi "%yields%" == "dynamic_aug18_yld_dcrs_i" $include "./modules/14_yields/dynamic_aug18_yld_dcrs_i/realization.gms"
+$Ifi "%yields%" == "biocorrect" $include "./modules/14_yields/biocorrect.gms"
+$Ifi "%yields%" == "dynamic_aug18" $include "./modules/14_yields/dynamic_aug18.gms"
+$Ifi "%yields%" == "dynamic_aug18_yld_dcrs" $include "./modules/14_yields/dynamic_aug18_yld_dcrs.gms"
+$Ifi "%yields%" == "dynamic_aug18_yld_dcrs_i" $include "./modules/14_yields/dynamic_aug18_yld_dcrs_i.gms"
 *###################### R SECTION END (MODULETYPES) ############################
