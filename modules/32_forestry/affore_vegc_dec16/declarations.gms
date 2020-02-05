@@ -32,7 +32,7 @@ positive variables
 equations
  q32_cost_fore_ac(i)                      Total forestry costs constraint (mio. USD04MER)
  q32_land(j)                              Land constraint (mio. ha)
- q32_cdr_aff(j)  			  			  Calculation of CDR from afforestation in terms of CO2-C (mio. tC)
+ q32_cdr_aff(j)  			  			           Calculation of CDR from afforestation in terms of CO2-C (mio. tC)
  q32_carbon(j,ag_pools)                    Forestry carbon stock calculation C (mio. tC)
  q32_land_diff                            Aggregated difference in forestry land compared to previous timestep (mio. ha)
  q32_land_expansion(j,land32)		   	  Forestry land expansion (mio. ha)

@@ -8,6 +8,8 @@ $setglobal c32_aff_mask  noboreal
 * options: unrestricted, noboreal, onlytropical
 $setglobal c32_aff_policy  npi
 * options: none, npi, ndc
+$setglobal c32_aff_bgp nobgp
+* options: ann,djf,jja,nobgp
 
 scalars
 	s32_max_aff_area 	Maximum global endogenous afforestation (mio. ha)    / Inf /
@@ -33,4 +35,10 @@ table f32_aff_pol(t_all,j,pol32) Exogenous afforestation scenario (mio. ha)
 $ondelim
 $include "./modules/32_forestry/input/npi_ndc_aff_pol.cs3"
 $offdelim
+;
+
+table f32_aff_bgp(j,bgp32) Biogeophysical temperature change of afforestation translated to tC for annual DJF JJA nobgp (tC per ha)
+$ondelim
+$include "./modules/32_forestry/input/refordefor_bgp_median.cs3"
+$ondelim
 ;
