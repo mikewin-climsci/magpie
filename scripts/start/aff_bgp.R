@@ -13,8 +13,8 @@
 # Load start_run(cfg) function which is needed to start MAgPIE runs
 source("scripts/start_functions.R")
 
-#start MAgPIE run
-start_run(cfg="default.cfg")
+# Source the default config and then over-write it before starting the run.
+source("config/default.cfg")
 
 # Change results folder name
 cfg$results_folder <- "output/:title:"
