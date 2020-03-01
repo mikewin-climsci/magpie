@@ -24,10 +24,10 @@ cfg$gms$c56_pollutant_prices <- "R2M41-SSP2-Budg600"
 cfg$gms$c60_2ndgen_biodem <- "R2M41-SSP2-Budg600"
 
 # Afforestation restrictions "unrestricted" "noboreal"
-cfg$gms$c32_aff_mask <- "noboreal"
+cfg$gms$c32_aff_mask <- "unrestricted"
 
 
-for(bgp_setting in c("nobgp","ann")){
+for(bgp_setting in c("ann","jja","nobgp","djf")){
   # Change bgp setting
   cfg$gms$c32_aff_bgp <- bgp_setting
 
@@ -36,10 +36,10 @@ for(bgp_setting in c("nobgp","ann")){
   if(bgp_setting == "ann") bgp_flag="ann_bgp"
   if(bgp_setting == "djf") bgp_flag="djf_bgp"
   if(bgp_setting == "jja") bgp_flag="jja_bgp"
-  
+
 
   # Update title
-  cfg$title <- paste0("MAgPIE","_",bgp_flag,"_","noboreal")
+  cfg$title <- paste0("MAgPIE","_",bgp_flag,"_","unrestricted","_","ac0")
 
   # Start the run
   start_run(cfg=cfg)

@@ -22,5 +22,5 @@ p32_land(t,j,type32,ac) = 0;
 p32_land(t,j,"plant","acx") = pcm_land(j,"forestry");
 
 *fix bph effect to zero for all age classes except ac0. Could be also ac20 if the bph effect occurs 20 years after planting (e.g. canopy closure)
-p32_bph_effect(j,ac) = 0;
+p32_aff_bgp(j,ac) = 0;
 p32_aff_bgp(j,"ac0") = f32_aff_bgp(j,"%c32_aff_bgp%");
