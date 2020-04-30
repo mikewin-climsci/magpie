@@ -8,8 +8,10 @@ $setglobal c32_aff_mask  noboreal
 * options: unrestricted, noboreal, onlytropical
 $setglobal c32_aff_policy  npi
 * options: none, npi, ndc
-$setglobal c32_aff_bgp nobgp
+$setglobal c32_aff_bgp  djf
 * options: ann,djf,jja,nobgp
+$setglobal c32_bgp_ac  ac30
+* options: ac0,ac10,ac20,ac30
 
 scalars
 	s32_max_aff_area 	Maximum global endogenous afforestation (mio. ha)    / Inf /
